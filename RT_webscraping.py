@@ -78,23 +78,4 @@ while True:
         df.to_csv('stock data.csv', mode='a', index=False, header=False)
 
     time.sleep(60)  # Sleep for 60 seconds before fetching data again
-'''
-while (True):
-    info = []
-    col = []
-    time_stamp = datetime.datetime.now() - datetime.timedelta(hours=10,minutes=30)
-    time_stamp = time_stamp.strftime('%Y-%m-%d %H:%M:%S')
-    for stock_code in Stock:
-        stock_price, change, volume, latest_pattern, one_year_target = real_time_price(stock_code)
-        info.append(stock_price)
-        info.extend([change])
-        info.extend([volume])
-        info.extend([latest_pattern])
-        info.extend([one_year_target])
-    col = [time_stamp]
-    col.extend(info)
-    df = pd.DataFrame(col)
-    df = df.T
-    df.to_csv(str(time_stamp[0:11]) + 'stock data.csv', mode='a', header=False)
-    print(col)
-'''
+
