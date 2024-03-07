@@ -16,7 +16,7 @@ This Python script utilizes BeautifulSoup, a powerful web scraping library, to e
 ### Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/webscraping-yahoo-finance.git
+   git clone https://github.com/Shanhavi23/webscraping-yahoo-finance.git
    ```
 2. Install required dependencies:
    ```bash
